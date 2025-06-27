@@ -38,6 +38,11 @@ def html_to_markdown(html_content):
     if not html_content:
         return ""
     soup = BeautifulSoup(html_content, "html.parser")
+
+    # Function to get text with proper spacing
+    def get_spaced_text(element):
+        return element.get_text(separator=" ", strip=True)
+
     # Convert links
     for a in soup.find_all("a"):
         href = a.get("href")
@@ -45,34 +50,39 @@ def html_to_markdown(html_content):
             if href.startswith("/"):
                 a["href"] = BASE_URL + href
             elif not href.startswith("http"):
-                a.replace_with(a.get_text())
+                a.replace_with(get_spaced_text(a))
                 continue
         else:
-            a.replace_with(a.get_text())
+            a.replace_with(get_spaced_text(a))
+
     # Convert headings
     for i in range(1, 7):
         for h in soup.find_all(f"h{i}"):
             level = "#" * (i + 2)
-            h.replace_with(f"\n{level} {h.get_text(strip=True)}\n\n")
+            h.replace_with(f"\n{level} {get_spaced_text(h)}\n\n")
+
     # Unordered lists
     for ul in soup.find_all("ul"):
         items = []
         for li in ul.find_all("li", recursive=False):
-            items.append(f"- {li.get_text(strip=True)}")
+            items.append(f"- {get_spaced_text(li)}")
         ul.replace_with("\n" + "\n".join(items) + "\n\n")
+
     # Ordered lists
     for ol in soup.find_all("ol"):
         items = []
         for i, li in enumerate(ol.find_all("li", recursive=False), 1):
-            items.append(f"{i}. {li.get_text(strip=True)}")
+            items.append(f"{i}. {get_spaced_text(li)}")
         ol.replace_with("\n" + "\n".join(items) + "\n\n")
+
     # Paragraphs
     for p in soup.find_all("p"):
-        text = p.get_text(strip=True)
+        text = get_spaced_text(p)
         if text:
             p.replace_with(f"{text}\n\n")
         else:
             p.replace_with("")
+
     text = soup.get_text()
     text = re.sub(r'\n{3,}', '\n\n', text)
     text = text.strip()

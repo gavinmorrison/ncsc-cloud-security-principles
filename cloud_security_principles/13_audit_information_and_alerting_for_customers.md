@@ -44,7 +44,7 @@ Audit information is primarily used in forensic investigations to identify how a
 
 The cloud provider should make audit information available in a format and structure that suits your needs. This might be a machine-readable format for efficient automated analysis, human-readable form in a hosted analysis tool, or a common format used by your external investigation tools.
 
-You should consider whether the data format is suitable for each purpose for which you intend to use audit information. You should discuss withyour SOCwhether the audit information will meet your needs and integrate with your existing tooling.
+You should consider whether the data format is suitable for each purpose for which you intend to use audit information. You should discuss with your SOC whether the audit information will meet your needs and integrate with your existing tooling.
 
 ##### What is recorded
 
@@ -66,7 +66,7 @@ Consider whether you require audit records to be held to specific standards, or 
 
 #### Goals
 
-You should be provided with alerts when the cloud provider detects attacks against your data, or your use of their services. The cloud provider should be your first line of defence for identifying and preventing common attacks.
+You should be provided with alerts when the cloud provider detects attacks against your data, or your use of their services . The cloud provider should be your first line of defence for identifying and preventing common attacks.
 
 ###### You should be sufficiently confident that:
 
