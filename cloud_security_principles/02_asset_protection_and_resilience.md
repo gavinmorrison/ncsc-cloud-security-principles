@@ -52,7 +52,7 @@ You should also consider:
 - who owns and is responsible for the physical data centre
 - the governing legislation of any contracts/agreements between you as a user of the service (or their suppliers) and the provider
 
-There will be situations where a jurisdiction will be able to request access to your data, from the service provider. This is normal and not specific to cloud services. You should be confident none of the legal jurisdictions under which your data is subject prevents you from meeting you security goals (such as Principle 1: data in transit protection and Principle 2.3: data encryption ) in all but exceptional circumstances.
+There will be situations where a jurisdiction will be able to request access to your data, from the service provider. This is normal and not specific to cloud services. You should be confident none of the legal jurisdictions under which your data is subject prevents you from meeting you security goals (such as Principle 1: data in transit protection and Principle 2.3: data encryption) in all but exceptional circumstances.
 
 GDS publishes guidance on multi-region cloud and software-as-a-service. It will help the public sector understand where government data at OFFICIAL (including OFFICIAL SENSITIVE) can be stored and processed.
 

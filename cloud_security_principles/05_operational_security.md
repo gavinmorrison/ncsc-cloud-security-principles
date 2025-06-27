@@ -65,7 +65,7 @@ If there is evidence to suggest that a vulnerability is being actively exploited
 
 If there is no evidence that a vulnerability is being actively exploited, you should expect the service provider to prioritise updates based on the impact of the vulnerability. Your service provider should commit to applying security updates or other effective mitigations to the service within a defined timescale that is relative to the release of the update. You should expect those security updates to be applied as soon as is practical, and not be delayed without good reason.
 
-An effective approach to configuration and change management (see Principle 5.4 below), and Secure Development (see Principle 7 ) will allow a cloud provider to test and apply mitigations to their service very quickly. A cloud provider should therefore be expected to apply mitigations and/or security updates to their service faster than would usually be expected in individual organisations.
+An effective approach to configuration and change management (see Principle 5.4 below), and Secure Development (see Principle 7) will allow a cloud provider to test and apply mitigations to their service very quickly. A cloud provider should therefore be expected to apply mitigations and/or security updates to their service faster than would usually be expected in individual organisations.
 
 Some providers will treat their commitments as a worst case, so you should also consider statistics of prior performance and published case studies when determining whether a cloud provider meets your needs.
 
@@ -161,7 +161,7 @@ A number of recognised standards include controls that cover aspects of configur
 
 It is worth checking the scope of any certification to verify that configuration and change management processes were covered as part of the assessment. If relying on assertions made by a service provider, you need to decide whether you are content with the level of confidence that they give you.
 
-Without good governance of the service (see Principle 4: Governance framework ) it is likely that change and configuration management practices will be ineffective.
+Without good governance of the service (see Principle 4: Governance framework) it is likely that change and configuration management practices will be ineffective.
 
 ### Additional considerations
 

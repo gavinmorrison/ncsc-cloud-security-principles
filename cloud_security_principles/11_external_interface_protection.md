@@ -19,7 +19,7 @@ If some of the interfaces exposed are private (such as management interfaces) th
 ### You should be sufficiently confident that:
 
 - you understand what physical and logical interfaces to your information exist, and how access to your data is controlled
-- the service identifies and authenticates users to an appropriate level over those interfaces (as described in Principle 10 )
+- the service identifies and authenticates users to an appropriate level over those interfaces (as described in Principle 10)
 
 ### You should prefer a cloud provider that:
 

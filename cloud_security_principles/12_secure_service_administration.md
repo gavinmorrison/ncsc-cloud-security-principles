@@ -34,7 +34,7 @@ These concepts are covered in more detail in the NCSC’s Secure system administ
 
 Secure service administration makes compromise of administration interfaces less likely, and lateral movement by an attacker more difficult. Combined with Principle 6.2: technical controls for service administration, the administration of the service will resist both external and internal attackers and minimise the impact of compromise.
 
-Privileged accesses should be performed using internal APIs which record appropriately detailed audit information (see Principle 13.1: Audit information ). These APIs should require any change to be tied to either an internal change request or a customer support ticket, so that the reason for an access can be tracked and audited. This is much easier for the provider to secure and monitor than interactive access to systems through management protocols like SSH and RDP.
+Privileged accesses should be performed using internal APIs which record appropriately detailed audit information (see Principle 13.1: Audit information). These APIs should require any change to be tied to either an internal change request or a customer support ticket, so that the reason for an access can be tracked and audited. This is much easier for the provider to secure and monitor than interactive access to systems through management protocols like SSH and RDP.
 
 Highly privileged accesses, such as those providing access to customer data, should be particularly carefully managed. For example, access to raw customer data could require authorisation from multiple nominated personnel and involve phishing-resistant multi-factor authentication (MFA).
 

@@ -37,7 +37,7 @@ For more information on types of separation available in the cloud and what to l
 
 ### To gain confidence in the implementation of separation controls, you should look for externally audited evidence of:
 
-- regular penetration tests, including red-team and blue-team exercises (good practice is discussed in our penetration testing guidance )
+- regular penetration tests, including red-team and blue-team exercises (good practice is discussed in our penetration testing guidance)
 - independent and internal security reviews of the service design
 - an engineering approach that ensures security is a key consideration in developing the service
 
@@ -45,7 +45,7 @@ For more information on types of separation available in the cloud and what to l
 
 You should understand what technologies are used to separate the code running your workload, from other customers.
 
-If you want to run custom executable code, you should look for a service that has hardware-backed separation and a small attack surface. This is usually implemented as virtualisation, using a hypervisor. For some workloads, the attack surface can be further reduced by using confidential computing technologies that include attestation and memory encryption (as outlined in Principle 2.3: data encryption ).
+If you want to run custom executable code, you should look for a service that has hardware-backed separation and a small attack surface. This is usually implemented as virtualisation, using a hypervisor. For some workloads, the attack surface can be further reduced by using confidential computing technologies that include attestation and memory encryption (as outlined in Principle 2.3: data encryption).
 
 Other software separation techniques have a much greater attack surface exposed to a rogue user. Separation within an application or enforced by the kernel, usually only provides appropriate security separation for services where you cannot run executable code (such as SaaS and some PaaS). Some containerisation techniques fall into this category and so should only be used for functional separation, if not also backed by hardware-backed separation (such as a Type 1 hardware-backed hypervisor).
 

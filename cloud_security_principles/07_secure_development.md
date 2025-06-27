@@ -43,6 +43,6 @@ Security standards are available with certification mechanisms. These can be use
 
 ### Third party code
 
-You should ensure that, when your provider purchases services, software components or development services from third parties, the development practices of the supplier are suitably secure. This should be achieved through the cloud provider’s supply chain process (see Principle 8 ).
+You should ensure that, when your provider purchases services, software components or development services from third parties, the development practices of the supplier are suitably secure. This should be achieved through the cloud provider’s supply chain process (see Principle 8).
 
 Similarly, the cloud provider’s use of third-party software dependencies should be tracked and risk-managed, according to their supply chain process. As with all software, these third-party dependencies need to be kept up to date, have security fixes applied, and continue to be actively maintained.

@@ -85,7 +85,7 @@ def html_to_markdown(html_content):
 
     text = soup.get_text()
     # Clean up extra whitespace from removed links, but preserve list formatting
-    text = re.sub(r' +([,.;:])', r'\1', text)  # Remove spaces before punctuation
+    text = re.sub(r' +([,.;:)])', r'\1', text)  # Remove spaces before punctuation including closing parentheses
     text = re.sub(r'(?<![\n-]) {2,}', ' ', text)  # Replace multiple spaces with single space, but not after newlines or dashes
     text = re.sub(r'\n{3,}', '\n\n', text)  # Replace multiple newlines with double newlines
     text = text.strip()
