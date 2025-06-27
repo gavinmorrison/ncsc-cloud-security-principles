@@ -1,4 +1,4 @@
-# NCSC Cloud Security Principles Markdown Export
+# NCSC Cloud Security Principles
 
 This repository contains a static export of the [NCSC Cloud Security Principles](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles) as individual, well-formatted Markdown files, suitable for reference, documentation, or further processing.
 
