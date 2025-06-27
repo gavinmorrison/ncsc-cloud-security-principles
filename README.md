@@ -10,24 +10,24 @@ This repository contains a static export of the [NCSC Cloud Security Principles]
 
 ## Index of Principles
 
-1. [Data in transit protection](cloud_security_principles/01_data_in_transit_protection.md)
-2. [Asset protection and resilience](cloud_security_principles/02_asset_protection_and_resilience.md)
-3. [Separation between customers](cloud_security_principles/03_separation_between_customers.md)
-4. [Governance framework](cloud_security_principles/04_governance_framework.md)
-5. [Operational security](cloud_security_principles/05_operational_security.md)
-6. [Personnel security](cloud_security_principles/06_personnel_security.md)
-7. [Secure development](cloud_security_principles/07_secure_development.md)
-8. [Supply chain security](cloud_security_principles/08_supply_chain_security.md)
-9. [Secure user management](cloud_security_principles/09_secure_user_management.md)
-10. [Identity and authentication](cloud_security_principles/10_identity_and_authentication.md)
-11. [External interface protection](cloud_security_principles/11_external_interface_protection.md)
-12. [Secure service administration](cloud_security_principles/12_secure_service_administration.md)
-13. [Audit information and alerting for customers](cloud_security_principles/13_audit_information_and_alerting_for_customers.md)
-14. [Secure use of the service](cloud_security_principles/14_secure_use_of_the_service.md)
+1. [Data in transit protection](principles/01_data_in_transit_protection.md)
+2. [Asset protection and resilience](principles/02_asset_protection_and_resilience.md)
+3. [Separation between customers](principles/03_separation_between_customers.md)
+4. [Governance framework](principles/04_governance_framework.md)
+5. [Operational security](principles/05_operational_security.md)
+6. [Personnel security](principles/06_personnel_security.md)
+7. [Secure development](principles/07_secure_development.md)
+8. [Supply chain security](principles/08_supply_chain_security.md)
+9. [Secure user management](principles/09_secure_user_management.md)
+10. [Identity and authentication](principles/10_identity_and_authentication.md)
+11. [External interface protection](principles/11_external_interface_protection.md)
+12. [Secure service administration](principles/12_secure_service_administration.md)
+13. [Audit information and alerting for customers](principles/13_audit_information_and_alerting_for_customers.md)
+14. [Secure use of the service](principles/14_secure_use_of_the_service.md)
 
 ## Directory Structure
 
-- `cloud_security_principles/` — Contains one Markdown file per principle, with YAML frontmatter and clean GitHub-flavored formatting.
+- `principles/` — Contains one Markdown file per principle, with YAML frontmatter and clean GitHub-flavored formatting.
 - `download_ncsc.py` — Script to fetch and regenerate the Markdown files from the NCSC API (optional, not required for static use).
 
 ## Usage

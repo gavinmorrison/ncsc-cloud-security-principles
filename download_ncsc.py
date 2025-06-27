@@ -24,7 +24,7 @@ PRINCIPLES = [
     "principle-14-secure-use-of-the-service",
 ]
 
-OUTPUT_DIR = Path("cloud_security_principles")
+OUTPUT_DIR = Path("principles")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 def slug_to_filename(slug):

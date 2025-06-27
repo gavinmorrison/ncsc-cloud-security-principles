@@ -10,8 +10,5 @@ __pycache__/
 *.json
 *.html
 
-# Ignore output if not needed (uncomment if you want to ignore output)
-# cloud_security_principles/
-
 # VSCode settings
 .vscode/
