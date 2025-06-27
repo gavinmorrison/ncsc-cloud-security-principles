@@ -14,9 +14,9 @@ The design, implementation, and management of the cloud provider’s administrat
 
 Systems used by the vendor for administration of their cloud services will have highly privileged access to that service. Their compromise would have significant impact, including the means to bypass security controls and steal or manipulate large volumes of data.
 
-#### Goals
+### Goals
 
-###### You should be sufficiently confident that your provider:
+##### You should be sufficiently confident that your provider:
 
 - builds and maintains trust in the devices it uses to administer the service, with regular and thorough, security assessments
 - protects its administration interfaces
@@ -24,13 +24,13 @@ Systems used by the vendor for administration of their cloud services will have 
 - uses privilege access management, including ‘just in time’ and ‘just enough’ administration
 - uses administration interfaces that produce detailed audit information, which is checked regularly for anomalous or unexpected behaviour
 
-###### You should prefer a cloud provider that:
+##### You should prefer a cloud provider that:
 
 - uses layered controls and processes to manage service administration, avoiding the browse-up anti-pattern
 
 These concepts are covered in more detail in the NCSC’s Secure system administration guidance .
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Secure service administration makes compromise of administration interfaces less likely, and lateral movement by an attacker more difficult. Combined with Principle 6.2: technical controls for service administration , the administration of the service will resist both external and internal attackers and minimise the impact of compromise.
 

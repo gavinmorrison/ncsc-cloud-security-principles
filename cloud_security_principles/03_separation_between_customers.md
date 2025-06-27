@@ -35,13 +35,13 @@ The strength of separation that you need will depend on what type of cloud servi
 
 For more information on types of separation available in the cloud and what to look for, please refer to the separation guide .
 
-###### To gain confidence in the implementation of separation controls, you should look for externally audited evidence of:
+##### To gain confidence in the implementation of separation controls, you should look for externally audited evidence of:
 
 - regular penetration tests, including red-team and blue-team exercises (good practice is discussed in our penetration testing guidance )
 - independent and internal security reviews of the service design
 - an engineering approach that ensures security is a key consideration in developing the service
 
-##### Compute separation
+#### Compute separation
 
 You should understand what technologies are used to separate the code running your workload, from other customers.
 
@@ -51,7 +51,7 @@ Other software separation techniques have a much greater attack surface exposed 
 
 You can find more detail on common types of compute separation and recommended use cases in the separation guide .
 
-##### Storage separation
+#### Storage separation
 
 You should understand what technologies are used to prevent unauthorised parties from accessing your data stored in the cloud service. This will include your data itself, but also logs and the storage associated with any compute workloads.
 
@@ -59,7 +59,7 @@ Cloud services use a central access control mechanism and policy engine to defin
 
 You should prefer storage services that also uses encryption to implement a security boundary around stored data. This will use per-customer or per-object keys, depending on the use-case, and will usually be managed by the cloud provider. The use of those keys can be audited. The approach using encryption provides a defence in depth when access controls are applied to the key store, such as ensuring a decryption key can only be accessed by specified compute services or privileged users. Refer to Principle 2.3: data encryption for algorithm and key management recommendations.
 
-##### Network flow separation
+#### Network flow separation
 
 You should use a cloud service that either implements, or is built on, a software defined network (SDN). This allows tight control over data flows, including the ability to more easily detect anomalous traffic. You should prefer an SDN that applies access controls at both ends of the data flow, and can define rules based on labels and identity, rather than just IP, port and subnet. You can implement more fine-grained data flow rules more easily if you use a service mesh.
 
@@ -67,22 +67,22 @@ Your cloud provider should be able to explain how they ensure that the services 
 
 ## Additional considerations
 
-##### Location of security boundaries
+#### Location of security boundaries
 
 Cloud providers use different terminology to describe some of the features that are associated with security boundaries. You should therefore make sure that you understand what the provider means by terms such as account, tenant, organisation, subscription, resource group, project, user, and IAM role.
 
 It is particularly important that you understand which features are considered as a security boundary, if you are using them to implement a tiered service architecture, or other security-enforcing control within your service.
 
-##### Security updates
+#### Security updates
 
 The security separation between customers of a cloud service will only be effective if the service provider has an effective vulnerability management plan, as described in Principle 5: operational security . This will be true, even if you choose to use dedicated or bare-metal hosting options, as you are still relying on the integrity of components such as the shared management plane. The service provider will often also still be responsible for managing the firmware of the dedicated physical device.
 
-##### Management networks
+#### Management networks
 
 Customers will usually administer their use of the service through the same control plane that the cloud provider will use to manage the service. As a result, it’s important for the cloud provider to design the control plane to defend effectively against malicious and compromised customers. While any interface that acts as a control plane needs to be defended well, a shared control plane will also need to enforce separation between customers.
 
 The separation between customers of a cloud service will only be effective if the service provider’s own management plane is well defended, as described in Principle 12: secure service administration .
 
-##### Private and community clouds
+#### Private and community clouds
 
 Community and private clouds may claim that you don't need as strong separation as when using public clouds because all customers agree to a good level of cyber hygiene and a shared risk model. However, the reliance on such procedural controls will not mitigate the risk of lateral movement between a compromised customer and your services. You should, therefore, rely on the same types of technically enforced separation within a private or community cloud as you would if you were using a public cloud.

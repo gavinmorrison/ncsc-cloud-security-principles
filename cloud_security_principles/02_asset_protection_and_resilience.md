@@ -22,7 +22,7 @@ You should consider:
 
 ## Principle 2.1: physical location and legal jurisdiction
 
-#### Goals
+### Goals
 
 You should be confident that you know where your data is , and who can access your data . This should include derivatives of your data, such as verbose logs and machine learning models, unless sensitive aspects have been intentionally excluded or removed.
 
@@ -33,15 +33,15 @@ You should understand:
 - the rights that the service provider will have to access and use your data
 - the legal circumstances under which your data could be accessed without your consent, and how this affects your compliance with UK legislation
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
-##### Physical location
+#### Physical location
 
 Your service provider should present a complete list of countries where your data is stored and processed, and where the service is managed and supported from. This list may vary, depending on which specific services you are using. For example, your data may be stored in a specified local region, but the authentication service used to access it may be replicated worldwide.
 
 The level of confidence you have in the lists provided will vary depending on whether you're reliant on the supplier's assertions, or have additional assurance through independent validation. The supplier should contractually commit to notify you of changes to the list.
 
-##### Legal jurisdiction
+#### Legal jurisdiction
 
 You need to identify which legal jurisdiction(s) your data could be subject to, seeking legal advice as necessary. This may be more complex than simply clarifying the physical locations where data is stored, processed, or accessed by the service provider.
 
@@ -56,15 +56,15 @@ There will be situations where a jurisdiction will be able to request access to 
 
 GDS publishes guidance on multi-region cloud and software-as-a-service . It will help the public sector understand where government data at OFFICIAL (including OFFICIAL SENSITIVE) can be stored and processed.
 
-##### Use of your data
+#### Use of your data
 
 You should consider the implications of any rights the service provider will have relating to data stored within the service. Some usage agreements and privacy policies allow the service provider to use customer data for marketing, advertising, machine learning, or other purposes. This may include sharing data with third parties, as discussed in Principle 8: Supply chain security . These types of data-usage agreements are particularly common for free cloud services marketed to individuals, and the free tiers of services aimed at businesses and enterprises.
 
 You should ensure that you are not unintentionally granting rights for the service provider (or their partners) to retain copies of sensitive data or personally identifiable information (PII) for such purposes. You should also check whether any agreements with the service provider relating to their use of your data are acceptable to you, and also not contrary to relevant legislation, such as the Data Protection Act 2018.
 
-##### Additional considerations
+#### Additional considerations
 
-###### Data protection legislation
+##### Data protection legislation
 
 You will need to determine whether you are storing or processing any personal information in the cloud service. If you are, the General Data Protection Regulation (GDPR) as it applies in the UK – tailored by the Data Protection Act (DPA) 2018 – will apply.
 
@@ -74,11 +74,11 @@ Refer to ICO guidance about International Transfers for more information.
 
 ## Principle 2.2: data centre security
 
-#### Goals
+### Goals
 
 You should be confident that the physical security measures employed by the provider are sufficient to protect against unauthorised access, tampering, theft or reconfiguration of systems, when considered alongside data at rest protections.
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Your service provider should disclose information on the security controls around their (or their suppliers’) data centres, ideally having been certified against a recognised and appropriate standard, that covers physical security. Appropriate standards include CSA CCM v3.0.1 and ISAE 3402 .
 
@@ -90,7 +90,7 @@ It is unlikely that a visit to a cloud provider’s data centre will provide evi
 
 ## Principle 2.3: data encryption
 
-#### Goals
+### Goals
 
 Your data should be adequately protected from unauthorised access by parties with physical access to infrastructure, when considered alongside data at rest protections provided by encryption.
 
@@ -102,11 +102,11 @@ For this encryption, a symmetric encryption algorithm should be used in a mode o
 
 Even a good algorithm will be vulnerable to attack if it’s not used in a good mode of operation. So, both the algorithm and mode of operation used should be approved for general use. For example, an algorithm from NIST-SP-800-131A , and a suitable mode of operation from NIST-SP-800-38 . At the time of writing, these include the symmetric algorithm AES, and the modes of operation GCM and XTS. You may see these described as AES-GCM or AES-XTS.
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 This section outlines some of the ways in which a supplier could demonstrate that they are achieving the goals. Your cloud provider may choose some other way to meet the goals, which you will need to assess.
 
-##### Encryption of all physical media
+#### Encryption of all physical media
 
 The service provider should ensure that no data is written to disk in an unencrypted form. This can be achieved using full-disk encryption, or application-layer encryption, or both. Encrypted data should include your customer data, pages in memory, metadata and logs derived from that data. Errors in use of cryptography or poor key management could result in exposure, or loss of integrity of your data and workloads.
 
@@ -118,34 +118,34 @@ Your service provider may also use data encryption as a mechanism to enforce sep
 
 To support onboarding and offboarding processes, it may be necessary for storage media to be transferred between you and the service provider. If this is the case, the storage media should be encrypted to the same standards as data held in the service, ensuring that the decryption key is not accessible in transit.
 
-##### Encryption of all data in an application
+#### Encryption of all data in an application
 
 The service provider may implement data encryption inside an application such as a database. Data should be encrypted using well-configured, appropriate algorithms and assessed against standards, as described above.
 
 Relying on application-level encryption usually leaves traces of unencrypted data when the data is accessed or processed, such as in memory pages and application logs. Any application-level encryption should be combined with physical media encryption.
 
-##### Encryption of data in memory
+#### Encryption of data in memory
 
 The service provider may use hardware that encrypts the memory of a virtual machine, or service, while it is running. For more information, see Confidential computing . This technique is most valuable in cases where you have been unable to gain sufficient confidence in a service provider’s physical security, or their associated operational procedures and governance. The benefits and use cases of such hardware-backed enclaves are discussed in our separation guidance .
 
-##### Infeasibility of finding a specific customer’s data on physical devices
+#### Infeasibility of finding a specific customer’s data on physical devices
 
 The scale of a service provider, obfuscation techniques, or data storage ‘sharding’ make it infeasible for a determined attacker with physical access to a data centre to locate a specific customer’s data and workloads. You should not rely on sharding alone to protect your data against the theft of a physical disk, or interference with a physical server. This approach should instead be considered as a way of providing extra confidence on top of the provider’s encryption and physical security measures.
 
 ## Principle 2.4: data sanitisation and equipment disposal
 
-#### Goals
+### Goals
 
 The process of provisioning, migrating and de-provisioning resources should not result in unauthorised access to your data. You should be confident that:
 
 - your data is erased when resources are moved or re-provisioned, or when you request it to be erased
 - storage media which has held your data is sanitised or securely destroyed at the end of its life
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Your service provider should give assurances that previously stored data cannot be accessed by others after it is moved or erased. This will include situations where the equipment used to deliver a service has reached the end of its useful life and should be disposed of in a way which does not compromise the security of the service, or user data stored in the service. You can also refer to our more detailed guidance on the secure sanitisation of storage media .
 
-##### Disposing of encryption keys
+#### Disposing of encryption keys
 
 If your data has been appropriately encrypted, deleting the decryption key will make it inaccessible. This technique is sometimes described as crypto shredding . The confidence you can have in this technique relies on the data being encrypted using well-configured modern algorithms, as described in Principle 2.3: data encryption above, and a robust key disposal mechanism such as one in a FIPS 140-2 Hardware Security Module.
 
@@ -153,13 +153,13 @@ Data on disk may be protected using a key that is shared between several custome
 
 Data objects may be protected using a managed key that is only accessible by you and your services. Disposal of such a key is also an effective sanitisation technique, making your data irretrievable, from a shared storage service.
 
-##### Explicit overwriting of storage
+#### Explicit overwriting of storage
 
 The effectiveness of attempting to overwrite stored data on disk depends on the type of disk used by your provider. Solid-state disks, hybrid drives, solid-state memory and other flash-based media cannot be overwritten with the same degree of assurance as a traditional magnetic hard disk drives.
 
 The type of disk used by your cloud provider may change over time, so you should not assume that the data that had previously been stored on magnetic disks will continue to be. This mitigation should therefore only be used as a defence in depth, in addition to other approaches, such as encryption.
 
-##### Secure equipment disposal
+#### Secure equipment disposal
 
 Your service provider should disclose information on the processes and techniques they (or their suppliers) use to sanitise equipment before disposal. This may include the use of a service that physically destroys decommissioned storage and systems.
 
@@ -169,7 +169,7 @@ It is worth checking the scope of any certification to verify that the existence
 
 ## Principle 2.5: physical resilience and availability
 
-#### Goals
+### Goals
 
 You should be sufficiently confident that:
 
@@ -179,7 +179,7 @@ You should be sufficiently confident that:
 
 You should prefer a service that makes it easy to determine whether your configuration of a cloud service (including the use of multiple regions or availability zones) will provide the level of automatic failover and redundancy that you expect.
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Your service provider will likely use contractual commitments or service level agreements (SLAs) to make commitments about the level of service availability. This may provide a mechanism for compensation in the event of outages, but outages will not be prevented if the service design is not appropriate.
 
@@ -196,9 +196,9 @@ You should consider how your data is protected from unwanted destruction, such a
 
 You should be confident that these backups give you the ability to revert or restore data to a ‘known good state’. This functionality could be provided as part of the core service, by pushing data to an external service, or by providing ways for third party services to back up and protect data.
 
-#### Additional considerations
+### Additional considerations
 
-##### Service level agreements
+#### Service level agreements
 
 A cloud service provider usually defines its service level agreements (SLAs) per-service, rather than for the whole of their platform. You may find that the service may not offer a contract that features the percentage availability that you need.
 

@@ -12,9 +12,9 @@ ogl: "Contains public sector information licensed under the Open Government Lice
 
 Cloud services rely upon third party products and services. Consequently, if this principle is not implemented, supply chain compromise can undermine the security of the service and affect the implementation of other security principles.
 
-#### Goals
+### Goals
 
-###### You should be sufficiently confident that you understand:
+##### You should be sufficiently confident that you understand:
 
 - how your data is shared with (or made accessible to) third party suppliers and their supply chains, including the circumstances under which that data is shared
 - which customer data, and metadata derived from that data, is shared with, or made accessible to third party supplies and their supply chains
@@ -24,23 +24,23 @@ Cloud services rely upon third party products and services. Consequently, if thi
 
 These concepts are covered in more detail in the NCSC’s Supply chain guidance .
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Cloud services are often built on top of third-party IaaS or PaaS products. This is a valuable opportunity to re-use trusted components, but it’s important to identify which party is responsible for implementing which security functions.
 
-##### Separation
+#### Separation
 
 These layered services may result in a more complex situation when it comes to understanding separation . For example, a community SaaS may separate different users with application software controls. However, it may have been built on top of a public cloud IaaS offering, where the separation controls are implemented in the hypervisor. Thus, the actual controls may be different in practice to what they first appear.
 
-##### Sensitive data
+#### Sensitive data
 
 If your application or data is particularly sensitive, you will need to consider the entire underlying stack of services as part of any security assessment. It will be difficult to gain a high degree of confidence in the security of any service built on foundations you do not understand.
 
-##### Data sharing
+#### Data sharing
 
 Cloud services often describe data sharing relationships with third parties in their terms of service, or a separate privacy policy. You should also be able to find out how they specifically share personal data (or data derived from it) as part of a GDPR compliance statement.
 
-#### Additional considerations
+### Additional considerations
 
 If you buy or outsource the operation of your cloud services to a third party such as a Managed Service Provider (MSP), they and their supply chains will also be part of your supply chain.
 

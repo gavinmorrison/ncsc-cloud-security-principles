@@ -21,7 +21,7 @@ Effective personnel controls should be a balance of:
 
 The service provider should subject personnel to security screening and regular security training, appropriate to their role and privileges. Providers should make clear how they screen and manage personnel within privileged roles.
 
-#### Goals
+### Goals
 
 You should be confident that:
 
@@ -29,11 +29,11 @@ You should be confident that:
 - the provider has implemented a positive security culture across their organisation
 - the level of security screening conducted on service provider staff or contractors that have access to your data, or have the ability to affect your service, is appropriate
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Your provider should be able to explain how they build and sustain a positive security culture in their workforce and partnerships. You can read more about the benefits of doing this in in CPNI’s Data Centre guidance . Security training pathways can benefit staff in all roles, but they are most beneficial to staff in privileged roles when there is any dependency on them following procedural controls.
 
-###### The provider should be able identify groups of people that:
+##### The provider should be able identify groups of people that:
 
 - could have access to your data, such as second or third line support engineers
 - are in a role that could directly affect the operation or integrity of the service, such as someone that can approve code check-in to production
@@ -50,7 +50,7 @@ Note that it is not possible to perform all of the checks in some countries, and
 
 Personnel security should combine background checks and procedural controls with technical measures designed to detect and minimise the impact of a malicious insider.
 
-#### Goals
+### Goals
 
 You should be confident that:
 
@@ -59,13 +59,13 @@ You should be confident that:
 
 You should prefer a cloud provider that employs technical controls to reduce the likelihood of accidental or malicious compromise by service provider personnel.
 
-###### Controls should include:
+##### Controls should include:
 
 - administrators and privileged users are only given minimal administrative capabilities temporarily, in response to a specific issue (additional privileges should be requested when necessary)
 - requests for additional privileges are tied either to a customer support ticket, or an internal change request
 - access to systems or interfaces that could provide access to customer data is only granted if the customer has given explicit time-limited permission for that access (this applies on a case-by-case basis)
 
-#### Suggested implementation approaches
+### Suggested implementation approaches
 
 Role Based Access Control (RBAC) can be configured so that the cloud provider’s personnel can only perform actions that are directly related to their role. The role of RBAC in how your cloud provider administers its service is covered in more detail in Principle 12: secure service administration .
 

@@ -50,15 +50,15 @@ def html_to_markdown(html_content):
             if href.startswith("/"):
                 a["href"] = BASE_URL + href
             elif not href.startswith("http"):
-                a.replace_with(get_spaced_text(a))
+                a.unwrap()  # Just remove the tag, keep the text
                 continue
         else:
-            a.replace_with(get_spaced_text(a))
+            a.unwrap() # Just remove the tag, keep the text
 
     # Convert headings
     for i in range(1, 7):
         for h in soup.find_all(f"h{i}"):
-            level = "#" * (i + 2)
+            level = "#" * (i + 1)  # Adjust heading level
             h.replace_with(f"\n{level} {get_spaced_text(h)}\n\n")
 
     # Unordered lists

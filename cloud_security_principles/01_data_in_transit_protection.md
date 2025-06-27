@@ -18,13 +18,13 @@ Data in transit protection should be achieved through a combination of:
 
 ## Goals
 
-###### You should be sufficiently confident that:
+##### You should be sufficiently confident that:
 
 - data is protected in transit between your end user device(s) and the service
 - data is protected in transit as it flows between internal components within the service
 - data is protected in transit where exposed to other external services, such as via an API
 
-###### You should prefer a cloud provider that:
+##### You should prefer a cloud provider that:
 
 - encrypts all customer-data in transit by default
 - pre-configures data in transit encryption, and defaults to the latest industry standards
@@ -33,7 +33,7 @@ Data in transit protection should be achieved through a combination of:
 
 ## Suggested implementation approaches
 
-##### Encryption and authentication
+#### Encryption and authentication
 
 Encryption is usually implemented to provide additional confidentiality and integrity of data over and above that provided by network layer protections. All approaches should include encryption between endpoints and components of the cloud service.
 
@@ -49,7 +49,7 @@ Your cloud provider should be responsible for the encryption and key management 
 
 The cloud provider should give you assurances that data is protected in transit within their service, as well as when it is accessed via external interfaces. This includes where data is moved between physical data centres. Statements made in independently audited certifications such as CSA STAR , SOC2 , and ISO 27017:2015 can give assurance that this is in place.
 
-##### Network protections
+#### Network protections
 
 Public cloud providers are accessible directly over the internet. You should ensure that all data flows between clients and the cloud service are encrypted as described above.
 
@@ -61,7 +61,7 @@ Some services can be accessed via software-defined private networks (SD-WAN). Pr
 
 Some services can be accessed via bonded fibre-optic connections, or private WAN circuits offered by a telecommunications provider. These connections do not normally provide adequate cryptographic protections, and so you should always ensure data is also encrypted using TLS or IPsec and configured using a good profile. See our IPsec and TLS guidance for details.
 
-##### Authentication
+#### Authentication
 
 All accesses made to your cloud service should be authenticated. Most public cloud providers are accessible directly over the internet. If doing so, you should ensure that all data flows are authenticated and encrypted as described above. Both parties should be authenticated, but you don’t have to use the same method for both cases. For example, services often authenticate to the customer with a TLS certificate. Customers often authenticate to the service with a username, password, and MFA, as described in Principle 10: identity and authentication .
 
@@ -69,13 +69,13 @@ You can also use TLS to support end-user authentication and access controls with
 
 ## Additional considerations
 
-##### Points of attack
+#### Points of attack
 
 To compromise data in transit, an attacker would need access to the infrastructure over which the data transits. This could be physical access, or logical access if the attacker has compromised software components within the service.
 
 It is more likely that attackers will have access to infrastructure between the user and the service than to infrastructure within the service. However, the impact of an attacker accessing communications internal to the service would be significantly greater.
 
-##### Bulk data transfers
+#### Bulk data transfers
 
 On-boarding and off-boarding of customers and workloads may involve the transfer of bulk data into or out of the service. In this scenario, you should consider the protection of data during transit using one of the approaches described above.
 

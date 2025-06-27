@@ -16,7 +16,7 @@ An effective governance framework will ensure that procedural, personnel, physic
 
 You should be confident that the service has a governance framework and processes which are appropriate for your intended use.
 
-###### You should look for good governance practices, including:
+##### You should look for good governance practices, including:
 
 - A clearly identified, and named, board representative (or a person with the direct delegated authority) who is responsible for the security of the cloud service. This person will typically have the title ‘Chief Security Officer’, ‘Chief Information Officer’ or ‘Chief Technical Officer’.
 - A documented framework for security governance and risk management, with policies governing key aspects of information security, relevant to the service.
