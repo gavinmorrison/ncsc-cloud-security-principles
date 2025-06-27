@@ -12,9 +12,9 @@ ogl: "Contains public sector information licensed under the Open Government Lice
 
 Services and data should only be accessible to an authenticated and authorised identity, which may be either a user or a service identity.
 
-To apply effective access control as described in Principle 9: secure user management , you must have confidence in the authentication method used to determine the identity performing the access.
+To apply effective access control as described in Principle 9: secure user management, you must have confidence in the authentication method used to determine the identity performing the access.
 
-Weak authentication to these interfaces may enable unauthorised access to your systems, resulting in the theft or modification of your data, changes to your service, or a denial of service. Importantly, authentication should occur over secure channels, as described in Principle 1: data in transit protection .
+Weak authentication to these interfaces may enable unauthorised access to your systems, resulting in the theft or modification of your data, changes to your service, or a denial of service. Importantly, authentication should occur over secure channels, as described in Principle 1: data in transit protection.
 
 ### Goals
 
@@ -52,7 +52,7 @@ Your provider should have processes for automatically changing ('rotating') and 
 
 ### Defending authentication
 
-The cloud provider should take active measures to defend against authentication attacks, like password sprays and common weak passwords, as described in Principle 11 – External interface protection . Similarly, the provider should supply security alerts (see Principle 13.2 ) if they are discovered in common public locations, like code hosting repositories or breach data sharing sites. Ideally, these should be accompanied with an option to remediate the issue.
+The cloud provider should take active measures to defend against authentication attacks, like password sprays and common weak passwords, as described in Principle 11 – External interface protection. Similarly, the provider should supply security alerts (see Principle 13.2 ) if they are discovered in common public locations, like code hosting repositories or breach data sharing sites. Ideally, these should be accompanied with an option to remediate the issue.
 
 The cloud provider should endeavour to make authentication as user-friendly as possible, to avoid discouraging the use of strong authentication methods. This includes:
 

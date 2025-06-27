@@ -21,9 +21,9 @@ Good operational security should not require complex, bureaucratic, time consumi
 
 ### Goals
 
-Your provider should have a vulnerability management process in place to identify , triage and mitigate vulnerabilities in all components of the service that they are responsible for.
+Your provider should have a vulnerability management process in place to identify, triage and mitigate vulnerabilities in all components of the service that they are responsible for.
 
-Note: For more information about how to assess and prioritise vulnerabilities, please refer to the NCSC’s Vulnerability Management guidance .
+Note: For more information about how to assess and prioritise vulnerabilities, please refer to the NCSC’s Vulnerability Management guidance.
 
 ### You should be confident that:
 
@@ -46,7 +46,7 @@ The provider should consider the severity and impact of threats and vulnerabilit
 
 ### Vulnerability management process
 
-Conformance with a recognised standard such as ISO/IEC 30111:2019 , and CSA CCM v3.0.1 can provide appropriate evidence of an effective vulnerability management process . Note that these standards do not explicitly set out acceptable timescales for mitigation.
+Conformance with a recognised standard such as ISO/IEC 30111:2019, and CSA CCM v3.0.1 can provide appropriate evidence of an effective vulnerability management process. Note that these standards do not explicitly set out acceptable timescales for mitigation.
 
 You should seek evidence, public assertions and prior history that your service provider applies security updates or other effective mitigations within the timescales set out below.
 
@@ -61,7 +61,7 @@ You should be confident that the scope of the vulnerability management process i
 
 ### Timescales for applying mitigations
 
-If there is evidence to suggest that a vulnerability is being actively exploited in the wild, you should expect your service provider to put mitigations in place immediately . An initial response may be to signature the vulnerability so that its attempted use can be detected. A temporary mitigation may then be put in place while a permanent fix or security update is tested and deployed to the service.
+If there is evidence to suggest that a vulnerability is being actively exploited in the wild, you should expect your service provider to put mitigations in place immediately. An initial response may be to signature the vulnerability so that its attempted use can be detected. A temporary mitigation may then be put in place while a permanent fix or security update is tested and deployed to the service.
 
 If there is no evidence that a vulnerability is being actively exploited, you should expect the service provider to prioritise updates based on the impact of the vulnerability. Your service provider should commit to applying security updates or other effective mitigations to the service within a defined timescale that is relative to the release of the update. You should expect those security updates to be applied as soon as is practical, and not be delayed without good reason.
 
@@ -109,7 +109,7 @@ Services which collect accounting and audit information but do not have effectiv
 
 ### Goals
 
-Your cloud provider should have pre-planned incident management processes in place, to make it more likely that effective and prompt decisions are made when incidents occur . The processes needn’t be complex or require large amounts of description, but good incident management will minimise the impact to users of security, reliability and environmental issues with a service.
+Your cloud provider should have pre-planned incident management processes in place, to make it more likely that effective and prompt decisions are made when incidents occur. The processes needn’t be complex or require large amounts of description, but good incident management will minimise the impact to users of security, reliability and environmental issues with a service.
 
 ### You should have confidence that:
 
@@ -122,13 +122,13 @@ Your cloud provider should have pre-planned incident management processes in pla
 
 Your cloud provider should be able to explain their incident management processes, including how the above goals are met.
 
-The provider may refer to incident management standards such as ISO/IEC 27035-1:2016 , CSA CCM v3.0.1 and ISO/IEC 27001:2013 . These standards include the need for an organisation to carry out incident management, and require the service to define some goals that they’re aiming to meet (and a provider can be certified against them). It is against these self-selected goals that the organisation is certified.
+The provider may refer to incident management standards such as ISO/IEC 27035-1:2016, CSA CCM v3.0.1 and ISO/IEC 27001:2013. These standards include the need for an organisation to carry out incident management, and require the service to define some goals that they’re aiming to meet (and a provider can be certified against them). It is against these self-selected goals that the organisation is certified.
 
 Each standard has different requirements – some cover incident management controls in detail, others simply require that an incident management process exists. You will need to check the scope of any certifications that your cloud provider is using as evidence that it meets your expectations, including that the audit and assessment was performed by an independent and expert party.
 
-Some types of incidents affecting the cloud platform may affect your data, or use of the shared service. You should ensure that you have an agreement with your provider that they will tell you when they detect or have confirmed an incident that affects your data, and be comfortable with the reporting method and timescales. This is in addition to your security monitoring responsibilities as discussed in Principle 13: Audit information and alerting for customers .
+Some types of incidents affecting the cloud platform may affect your data, or use of the shared service. You should ensure that you have an agreement with your provider that they will tell you when they detect or have confirmed an incident that affects your data, and be comfortable with the reporting method and timescales. This is in addition to your security monitoring responsibilities as discussed in Principle 13: Audit information and alerting for customers.
 
-Your cloud provider should have a vulnerability disclosure process that allows both customers and security researchers to report vulnerabilities in the services you use. They should be able to show you where this is on their public website and give you confidence that their process is effective. We recommend that a disclosure service is based on ISO/IEC 29147:2018 and ISO/IEC 30111:2019 .
+Your cloud provider should have a vulnerability disclosure process that allows both customers and security researchers to report vulnerabilities in the services you use. They should be able to show you where this is on their public website and give you confidence that their process is effective. We recommend that a disclosure service is based on ISO/IEC 29147:2018 and ISO/IEC 30111:2019.
 
 ### Additional considerations
 
@@ -157,7 +157,7 @@ Your provider should know what assets make up their service along with their con
 
 Your cloud provider should be able to explain what processes are in place to meet the above goals – whether they be procedural or technical.
 
-A number of recognised standards include controls that cover aspects of configuration and change management processes, including CSA CCM v3.0.1 , SOC 2 and ISO/IEC 27001:2013 . Standards differ in terms of the level of detail applied, and those referenced here cover the need for configuration and change management, rather than validation of the process.
+A number of recognised standards include controls that cover aspects of configuration and change management processes, including CSA CCM v3.0.1, SOC 2 and ISO/IEC 27001:2013. Standards differ in terms of the level of detail applied, and those referenced here cover the need for configuration and change management, rather than validation of the process.
 
 It is worth checking the scope of any certification to verify that configuration and change management processes were covered as part of the assessment. If relying on assertions made by a service provider, you need to decide whether you are content with the level of confidence that they give you.
 

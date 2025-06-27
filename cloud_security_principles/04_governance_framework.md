@@ -25,7 +25,7 @@ You should be confident that the service has a governance framework and processe
 
 ## Suggested implementation approaches
 
-There are some common security standards that include controls covering how well a governance framework risk-manages a particular service. These include CSA CCM v3.0.1 , SOC2 , and ISO/IEC 27001 . Note that standards differ in the level of detail that they cover. You should seek evidence of independent certification against such standards and ensure that the scope covers the goals that are set out above.
+There are some common security standards that include controls covering how well a governance framework risk-manages a particular service. These include CSA CCM v3.0.1, SOC2, and ISO/IEC 27001. Note that standards differ in the level of detail that they cover. You should seek evidence of independent certification against such standards and ensure that the scope covers the goals that are set out above.
 
 Services subject to GDPR may be able to use evidence provided to demonstrate compliance with the accountability data protection principle for some of the points above. The service provider’s GDPR Data Protection Officer will sometimes be the board representative who is responsible for the security of the cloud service.
 

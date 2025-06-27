@@ -16,7 +16,7 @@ Cloud services which aren’t designed, developed and deployed in a secure way m
 
 ### You should be sufficiently confident that:
 
-- the provider uses a software development lifecycle in line with our secure software development and deployment guidance , at a standard appropriate for the sensitivity of your data
+- the provider uses a software development lifecycle in line with our secure software development and deployment guidance, at a standard appropriate for the sensitivity of your data
 - the provider has built a culture of secure development, including secure development training, code review of all deployed changes, and curation of well-understood libraries for solving security-critical problems
 - the provider automates the integration and deployment pipeline used to deliver their cloud services, to enforce security, consistency, and a detailed audit trail
 - the provider clearly separates their production environment from testing or development environments
@@ -39,7 +39,7 @@ Secure development does not mean that all development must be done in-house, at 
 
 ### Standards and certification
 
-Security standards are available with certification mechanisms. These can be used to gain confidence in the effectiveness of the vendor’s software development lifecycle. These include ISO/IEC 27034 , ISO/IEC 30111:2019 and CSA CCM v3.0.1 .
+Security standards are available with certification mechanisms. These can be used to gain confidence in the effectiveness of the vendor’s software development lifecycle. These include ISO/IEC 27034, ISO/IEC 30111:2019 and CSA CCM v3.0.1.
 
 ### Third party code
 

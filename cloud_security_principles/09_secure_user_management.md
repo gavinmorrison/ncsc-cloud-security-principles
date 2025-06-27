@@ -46,6 +46,6 @@ Your cloud provider should use a single, coherent access control mechanism. This
 
 ### Time-bounded permissions
 
-As described in our secure system administration guidance , time-bounded permissions are an effective technique for reducing the risks around highly privileged identities.
+As described in our secure system administration guidance, time-bounded permissions are an effective technique for reducing the risks around highly privileged identities.
 
 For example, global or super-administrator identities should not be used for routine tasks, but may be needed to respond to incidents. Enabling those privileges only for the duration of an incident helps to prevent their use (accidentally or otherwise) after the incident has ended.

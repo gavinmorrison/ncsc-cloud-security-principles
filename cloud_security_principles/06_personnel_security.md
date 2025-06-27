@@ -10,7 +10,7 @@ ogl: "Contains public sector information licensed under the Open Government Lice
 
 > Audit and constrain the actions of service provider personnel.
 
-Where service provider personnel have access to your data and systems, you need to have enough confidence in their trustworthiness , and the technical measures in place that audit and constrain the actions of those personnel .
+Where service provider personnel have access to your data and systems, you need to have enough confidence in their trustworthiness, and the technical measures in place that audit and constrain the actions of those personnel.
 
 Effective personnel controls should be a balance of:
 
@@ -31,7 +31,7 @@ You should be confident that:
 
 ### Suggested implementation approaches
 
-Your provider should be able to explain how they build and sustain a positive security culture in their workforce and partnerships. You can read more about the benefits of doing this in in CPNI’s Data Centre guidance . Security training pathways can benefit staff in all roles, but they are most beneficial to staff in privileged roles when there is any dependency on them following procedural controls.
+Your provider should be able to explain how they build and sustain a positive security culture in their workforce and partnerships. You can read more about the benefits of doing this in in CPNI’s Data Centre guidance. Security training pathways can benefit staff in all roles, but they are most beneficial to staff in privileged roles when there is any dependency on them following procedural controls.
 
 ### The provider should be able identify groups of people that:
 
@@ -67,7 +67,7 @@ You should prefer a cloud provider that employs technical controls to reduce the
 
 ### Suggested implementation approaches
 
-Role Based Access Control (RBAC) can be configured so that the cloud provider’s personnel can only perform actions that are directly related to their role. The role of RBAC in how your cloud provider administers its service is covered in more detail in Principle 12: secure service administration .
+Role Based Access Control (RBAC) can be configured so that the cloud provider’s personnel can only perform actions that are directly related to their role. The role of RBAC in how your cloud provider administers its service is covered in more detail in Principle 12: secure service administration.
 
 Your provider should log and audit all accesses made to production systems and the customer data hosted on them. They should be able to explain how they do this, and how they use the logs to ensure that:
 
@@ -76,4 +76,4 @@ Your provider should log and audit all accesses made to production systems and t
 
 Logging is more reliable on cloud services that are administered via a managed API, and hard to do reliably on systems that allow administrators to log onto an interactive session. You should therefore prefer a cloud provider that prevents all interactive logon to servers and services by the cloud service’s personnel. Attempts to use such interfaces – even if prevented – should be raised as a priority security incident.
 
-You should understand which logs relevant to your data and service are made available to you as a customer, as discussed in Principle 13: audit information and alerting for customers .
+You should understand which logs relevant to your data and service are made available to you as a customer, as discussed in Principle 13: audit information and alerting for customers.

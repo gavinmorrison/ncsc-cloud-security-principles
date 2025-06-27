@@ -29,12 +29,12 @@ If some of the interfaces exposed are private (such as management interfaces) th
 
 ### Suggested implementation approaches
 
-An internet-connected interface can be attacked from anywhere, but an interface only available to a community or private network can only be attacked from those networks. Network protection methods like MPLS, SD-WAN, and VPNs are described in Principle 1: data in transit protection .
+An internet-connected interface can be attacked from anywhere, but an interface only available to a community or private network can only be attacked from those networks. Network protection methods like MPLS, SD-WAN, and VPNs are described in Principle 1: data in transit protection.
 
 The cloud provider should design every interface of their service to be robust against attack. You should be confident that the service provider has a regime of continuous testing in place to ensure any external interfaces remain secure.
 
 The cloud provider should make it easy to understand how your data and services are exposed more widely and what defences are in place. For example, it should be easy to identify which services are exposed to the internet, and which of those do not have protections against common attacks. This should include denial of service (DoS) attacks, authentication attacks like password sprays, and application-level attacks like HTTP desynchronisation, or SQL injection.
 
-As internet-accessible services are more exposed to attacks, having high confidence in the strength of authentication and access control will be particularly important. Principle 10: Identity and authentication , details common approaches to identification and authentication and explains the risks associated with each. Principle 9: Secure user management covers managing access control to cloud services, including the principle of least privilege.
+As internet-accessible services are more exposed to attacks, having high confidence in the strength of authentication and access control will be particularly important. Principle 10: Identity and authentication, details common approaches to identification and authentication and explains the risks associated with each. Principle 9: Secure user management covers managing access control to cloud services, including the principle of least privilege.
 
-The cloud provider may support insecure legacy protocols, such as those that do not permit modern approaches to authentication. Those protocols should be disabled by default, and the cloud provider should generate warnings if they are left enabled, as described in Principle 13.2: Security alerts .
+The cloud provider may support insecure legacy protocols, such as those that do not permit modern approaches to authentication. Those protocols should be disabled by default, and the cloud provider should generate warnings if they are left enabled, as described in Principle 13.2: Security alerts.

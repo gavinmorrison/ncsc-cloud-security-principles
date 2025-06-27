@@ -22,7 +22,7 @@ Cloud services rely upon third party products and services. Consequently, if thi
 - how the service provider manages security risks from third party suppliers
 - how the service provider manages the conformance of their suppliers with security requirements
 
-These concepts are covered in more detail in the NCSC’s Supply chain guidance .
+These concepts are covered in more detail in the NCSC’s Supply chain guidance.
 
 ### Suggested implementation approaches
 
@@ -30,7 +30,7 @@ Cloud services are often built on top of third-party IaaS or PaaS products. This
 
 ### Separation
 
-These layered services may result in a more complex situation when it comes to understanding separation . For example, a community SaaS may separate different users with application software controls. However, it may have been built on top of a public cloud IaaS offering, where the separation controls are implemented in the hypervisor. Thus, the actual controls may be different in practice to what they first appear.
+These layered services may result in a more complex situation when it comes to understanding separation. For example, a community SaaS may separate different users with application software controls. However, it may have been built on top of a public cloud IaaS offering, where the separation controls are implemented in the hypervisor. Thus, the actual controls may be different in practice to what they first appear.
 
 ### Sensitive data
 
@@ -44,4 +44,4 @@ Cloud services often describe data sharing relationships with third parties in t
 
 If you buy or outsource the operation of your cloud services to a third party such as a Managed Service Provider (MSP), they and their supply chains will also be part of your supply chain.
 
-It is common for an MSP and their suppliers to retain privileged access to your cloud service. We discuss the considerations you should make in the MSP section of the cloud shared responsibility model .
+It is common for an MSP and their suppliers to retain privileged access to your cloud service. We discuss the considerations you should make in the MSP section of the cloud shared responsibility model.

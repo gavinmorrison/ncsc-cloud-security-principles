@@ -66,7 +66,7 @@ Consider whether you require audit records to be held to specific standards, or 
 
 ### Goals
 
-You should be provided with alerts when the cloud provider detects attacks against your data, or your use of their services . The cloud provider should be your first line of defence for identifying and preventing common attacks.
+You should be provided with alerts when the cloud provider detects attacks against your data, or your use of their services. The cloud provider should be your first line of defence for identifying and preventing common attacks.
 
 ### You should be sufficiently confident that:
 
