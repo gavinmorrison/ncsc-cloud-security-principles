@@ -55,10 +55,10 @@ def html_to_markdown(html_content):
         else:
             a.unwrap() # Just remove the tag, keep the text
 
-    # Convert headings
+    # Convert headings - make all content headings level 3
     for i in range(1, 7):
         for h in soup.find_all(f"h{i}"):
-            level = "#" * (i + 1)  # Adjust heading level
+            level = "###"  # All content headings become level 3
             h.replace_with(f"\n{level} {get_spaced_text(h)}\n\n")
 
     # Unordered lists

@@ -25,26 +25,26 @@ Your provider should have a vulnerability management process in place to identif
 
 Note: For more information about how to assess and prioritise vulnerabilities, please refer to the NCSC’s Vulnerability Management guidance .
 
-##### You should be confident that:
+### You should be confident that:
 
 - you know your service provider’s timescales for deploying security updates and other mitigations, and are happy with them
 - your provider takes responsibility for applying security updates to all software and hardware, including where they rely on external dependencies (or a third-party supply chain)
 - potential new threats, vulnerabilities or exploitation techniques that could affect your service are proactively assessed and corrective action is taken
 
-##### You should prefer a provider that:
+### You should prefer a provider that:
 
 - attempts to identify vulnerabilities in off-the-shelf components used by the service that you have deployed on top of the cloud platform
 - automatically applies mitigations
 
 ### Suggested implementation approaches
 
-#### Threat monitoring
+### Threat monitoring
 
 The provider should monitor sources of information relating to threat, vulnerabilities and exploitation techniques relevant to their service. Some service providers may have an internal threat intelligence team, some may rely on external threat feeds.
 
 The provider should consider the severity and impact of threats and vulnerabilities within the context of the service and use this information to prioritise the implementation of mitigations. Identified vulnerabilities should be tracked until mitigations have been deployed using a suitable change management process.
 
-#### Vulnerability management process
+### Vulnerability management process
 
 Conformance with a recognised standard such as ISO/IEC 30111:2019 , and CSA CCM v3.0.1 can provide appropriate evidence of an effective vulnerability management process . Note that these standards do not explicitly set out acceptable timescales for mitigation.
 
@@ -59,7 +59,7 @@ You should be confident that the scope of the vulnerability management process i
 - Hardware Security Module (HSM) firmware
 - firmware on the infrastructure supporting both physical and software-defined networks
 
-#### Timescales for applying mitigations
+### Timescales for applying mitigations
 
 If there is evidence to suggest that a vulnerability is being actively exploited in the wild, you should expect your service provider to put mitigations in place immediately . An initial response may be to signature the vulnerability so that its attempted use can be detected. A temporary mitigation may then be put in place while a permanent fix or security update is tested and deployed to the service.
 
@@ -111,7 +111,7 @@ Services which collect accounting and audit information but do not have effectiv
 
 Your cloud provider should have pre-planned incident management processes in place, to make it more likely that effective and prompt decisions are made when incidents occur . The processes needn’t be complex or require large amounts of description, but good incident management will minimise the impact to users of security, reliability and environmental issues with a service.
 
-##### You should have confidence that:
+### You should have confidence that:
 
 - incident management processes are in place for the service and are actively deployed in response to security incidents
 - pre-defined processes are in place for responding to common types of incident and attack
@@ -142,14 +142,14 @@ Where high availability is critical, you should understand which mitigations wil
 
 Your provider should know what assets make up their service along with their configurations and dependencies, allowing them to identify and manage changes which could affect the security of the service and fully mitigate vulnerabilities that they are aware of.
 
-##### You should be confident that:
+### You should be confident that:
 
 - the status, location and configuration of service components (both hardware and software) are tracked throughout their lifetime
 - changes to the service are assessed for potential security impact, then managed and tracked through to completion
 - unauthorised changes to the deployed service components and their configuration will be detected and prevented
 - the cloud provider will give you appropriate notice before making changes that affect how you use the service or your ability to use the service
 
-##### You should prefer a cloud provider that:
+### You should prefer a cloud provider that:
 
 - implements all technical change automatically and consistently across their infrastructure
 

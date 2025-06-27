@@ -16,7 +16,7 @@ Systems used by the vendor for administration of their cloud services will have 
 
 ### Goals
 
-##### You should be sufficiently confident that your provider:
+### You should be sufficiently confident that your provider:
 
 - builds and maintains trust in the devices it uses to administer the service, with regular and thorough, security assessments
 - protects its administration interfaces
@@ -24,7 +24,7 @@ Systems used by the vendor for administration of their cloud services will have 
 - uses privilege access management, including ‘just in time’ and ‘just enough’ administration
 - uses administration interfaces that produce detailed audit information, which is checked regularly for anomalous or unexpected behaviour
 
-##### You should prefer a cloud provider that:
+### You should prefer a cloud provider that:
 
 - uses layered controls and processes to manage service administration, avoiding the browse-up anti-pattern
 

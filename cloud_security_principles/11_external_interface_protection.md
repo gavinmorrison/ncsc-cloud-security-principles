@@ -16,12 +16,12 @@ If some of the interfaces exposed are private (such as management interfaces) th
 
 ### Goals
 
-##### You should be sufficiently confident that:
+### You should be sufficiently confident that:
 
 - you understand what physical and logical interfaces to your information exist, and how access to your data is controlled
 - the service identifies and authenticates users to an appropriate level over those interfaces (as described in Principle 10 )
 
-##### You should prefer a cloud provider that:
+### You should prefer a cloud provider that:
 
 - shows you which interfaces or services are exposed to the internet, highlighting those exposed without authentication
 - makes it easy to understand which defences are in place to protect each external interface to your data or your use of the service

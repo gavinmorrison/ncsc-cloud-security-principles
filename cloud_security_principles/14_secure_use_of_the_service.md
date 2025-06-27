@@ -23,14 +23,14 @@ You should consider:
 
 Your service provider should make it easy for you to use their services in a way that is defended against common attacks.
 
-##### You should be sufficiently confident that:
+### You should be sufficiently confident that:
 
 - you know which goals from the Principles 1-13 are met by the service’s default configuration
 - you know what you need to do to the service’s configuration to meet the remaining goals
 - data and services are not accessible to unauthenticated users, by default
 - the provider takes responsibility for improving their service’s default configuration, to respond to new threats (this may include altering the configuration of existing customers, as well as changing the starting point for new customers)
 
-##### You should prefer a cloud service that:
+### You should prefer a cloud service that:
 
 - meets all of the goals described in Principles 1-13 by design, or in its default configuration
 - makes configurable security-enhancing features opt-out, and not opt-in
@@ -62,13 +62,13 @@ You should periodically review your service configuration against the platform�
 
 Your service provider should make it easy for you to be confident that you are using the cloud securely. It should be easy for you to see what services you have in the cloud, and how they have been configured.
 
-##### You should be confident that:
+### You should be confident that:
 
 - all service configuration can be set and audited using infrastructure as code, or via an API
 - there is a single place where you can see all of your deployed resources across all services and regions offered by that cloud platform
 - all service configurations are visible and intuitive to humans, so that they can easily audit what services they are using, where their data is, and how those services are configured
 
-##### You should prefer a provider that:
+### You should prefer a provider that:
 
 - raises an actionable alert when your configuration of the service could weaken your security stance, or leave you vulnerable to a breach
 - gives you tools to help meet your responsibilities, such as hardened container base images, CI/CD tooling, and detection of common vulnerabilities in the applications that you deploy

@@ -33,7 +33,7 @@ You should be confident that:
 
 Your provider should be able to explain how they build and sustain a positive security culture in their workforce and partnerships. You can read more about the benefits of doing this in in CPNI’s Data Centre guidance . Security training pathways can benefit staff in all roles, but they are most beneficial to staff in privileged roles when there is any dependency on them following procedural controls.
 
-##### The provider should be able identify groups of people that:
+### The provider should be able identify groups of people that:
 
 - could have access to your data, such as second or third line support engineers
 - are in a role that could directly affect the operation or integrity of the service, such as someone that can approve code check-in to production
@@ -59,7 +59,7 @@ You should be confident that:
 
 You should prefer a cloud provider that employs technical controls to reduce the likelihood of accidental or malicious compromise by service provider personnel.
 
-##### Controls should include:
+### Controls should include:
 
 - administrators and privileged users are only given minimal administrative capabilities temporarily, in response to a specific issue (additional privileges should be requested when necessary)
 - requests for additional privileges are tied either to a customer support ticket, or an internal change request
